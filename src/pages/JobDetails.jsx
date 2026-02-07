@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { AiOutlineArrowLeft } from "react-icons/ai";
-import { getJobs } from "../services/api";
+import { getJobs } from "../services/Api";
 
 function JobDetails() {
   const { id } = useParams();
@@ -22,7 +22,7 @@ function JobDetails() {
 
   return (
     <>
-      <div className="max-w-4xl mx-auto px-6 mt-4">
+      <div className="max-w-4xl mx-auto h-full px-6 pb-20 mt-4">
         <Link
           to="/"
           className="inline-flex items-center gap-2 text-blue-600 hover:underline"

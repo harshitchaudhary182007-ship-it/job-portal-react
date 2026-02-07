@@ -4,16 +4,20 @@ import Home from "./pages/Home";
 import JobDetails from "./pages/JobDetails";
 import Footer from "./components/Footer";
 
-
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/job/:id" element={<JobDetails />} />
-      </Routes>
-      <Footer />
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/job/:id" element={<JobDetails />} />
+          </Routes>
+        </main>
+
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }
