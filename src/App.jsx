@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <div className="flex flex-col min-h-screen">
         <Navbar />
-        <main className="flex-grow">
+        <main className="flex-grow pt-20 pb-20">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/job/:id" element={<JobDetails />} />

@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="sticky bg-blue-600 text-white top-0 z-50 px-6 py-4 flex justify-between">
+    <nav className="fixed top-0 left-0 w-full bg-blue-600 text-white z-50 px-6 py-4 flex justify-between items-center shadow-lg">
       <h1 className="text-xl font-bold">Job Portal</h1>
-      <Link to="/">Home</Link>
+      <Link to="/" className="hover:underline">Home</Link>
     </nav>
   );
 }
